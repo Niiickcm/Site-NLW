@@ -1,0 +1,38 @@
+{# aqui contém o conteudo que se repete em outras paginas #}
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&Ubuntu:wght@700display=swap" rel="stylesheet">
+
+    {% block title %}
+      <title>Ecoleta</title>
+    {% endblock title %}
+  
+    
+    {# chamando o conteudo que só tem na pagina index.html pra cá#}
+    
+    {% block css %}
+    {% endblock css %}
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+
+  
+</head>
+<body>
+    {# chamando a variavel nunjucks do index.html #}
+    <div id="{{ pageId }}">
+       {% block content %}
+       {% endblock content %}
+    </div>
+
+    {% block modals %}
+    {% endblock modals %}
+    
+    {% block scripts %}
+    {% endblock scripts %}
+
+</body>
+</html>

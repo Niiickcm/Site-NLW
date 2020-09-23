@@ -1,0 +1,98 @@
+/*MODAL NA PAGINA HOME*/
+
+/*QUANDO O MODAL TIVER UMA CLASSE HIDE*/
+
+
+#modal{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0E0A14ef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#modal.hide{
+    display: none;
+}
+
+#modal .content{
+    color: white;
+    width: 420px;
+   
+}
+
+#modal .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+#modal .header h1{
+    color: white;
+}
+
+#modal .header a{
+    background-image: url("../assets/x.svg");
+    width: 20px;
+    height: 20px;
+    display: flex;
+    font-size: 0.01px;
+}
+#modal form label{
+    font-size: 18px;
+    line-height: 16px;
+    display: block;
+    margin-bottom: 15px;
+}
+#modal form .field{
+    display: flex;
+}
+
+#modal form input{
+    flex: 1;
+    height: 70px;
+    background-color: #f0f0f5;
+    padding: 16px 24px;
+    font-size: 16px;
+    color: #6c6c80;
+    border: none;
+    border-radius: 8px 0 0 8px;
+
+}
+
+#modal form button{
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+#modal form button:hover{
+    background-color: #2fb86e;
+}
+
+#modal form button img{
+    width: 25px;
+    height: 25px;
+}
+
+/* Modal da pagina created point*/
+
+#modal.point .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#modal.point .content h1{
+    color: white;
+    margin-top: 32px;
+}
